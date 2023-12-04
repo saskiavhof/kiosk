@@ -12,8 +12,7 @@ body {
 
 .cafe {
   position: absolute;
-  width: 1024px;
-  height: 576px;
+  height: 100%;
   z-index: 1;
 }
 
