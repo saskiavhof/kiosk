@@ -33,7 +33,7 @@ body {
   justify-content: center;
   background-color: #d4ac82;
 }
-
+/*
 .title{
   position: absolute;
   flex-direction: column;
@@ -41,6 +41,20 @@ body {
   justify-content: center;
   height: 100%;
   margin: 0; 
+}*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+
+.title {
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -51,15 +65,24 @@ h1 {
   padding: 20px;
 }
 
+h2 {
+  color: #b56767;
+}
+
+p {
+  text-align: left;
+}
+
+.start-container {
+  text-align: center;
+  animation: jello-horizontal 2s infinite both;
+}
 
 .start-button {
-  animation: jello-horizontal 2s infinite both;
-  display: inline-block;
   padding: 10px 20px;
   background-color: #4d6844;
   color: #ffffff; 
   border-radius: 20px;
-  margin-top: 40px;
   text-decoration: none;
   font-size: 30px;
 }
@@ -88,18 +111,6 @@ h1 {
   }
 }
 
-
-
-
-
-.text-box{
-  height: 70%;
-  width: 70px;
-  background-color: white;
-  z-index: 2;
-}
-
-
 /*
 .cafe {
   position: relative;
@@ -124,6 +135,22 @@ h1 {
   width: 240px;
 }
 
+.oldenburg{
+  position: absolute;
+  top: 340px;
+  left: 100px;
+  z-index: 3;
+  width: 50px;
+}
+
+.discord{
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  z-index: 3;
+  width: 100px;
+}
+
 .pulse-animation {
   filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
   animation: pulse 2s infinite;
@@ -141,3 +168,63 @@ h1 {
     filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-box {
+  position: absolute;
+  top: 50%; /* Adjust the positioning as needed */
+  left: 50%; /* Adjust the positioning as needed */
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  text-align: center;
+  height: 500px;
+  width: 800px;
+  border-radius: 20px;
+}
+
+.text-box p{
+  padding: 30px;
+}
+
+
+.return-container {
+  position: absolute;
+  bottom: 50px; /* 50px from the bottom of the .text-box */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0; /* Initially set to be transparent */
+  animation: fadeIn 1s ease-in-out 3s forwards;
+}
+
+.return-button {
+  padding: 10px 20px;
+  background-color: #4d6844;
+  color: #ffffff; 
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
