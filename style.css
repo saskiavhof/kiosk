@@ -1,7 +1,7 @@
 body {
   background-color: #f3c0c0;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0; /* Remove default body margin */
+  margin: 0;
   overflow: hidden; 
 }
 
@@ -9,7 +9,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 10px; /* Adjust padding as needed for spacing */
+  padding: 10px;
   z-index: 4;
 }
 
@@ -24,30 +24,6 @@ nav {
  /* 1920 x 1080 */
  /* 1024 x 576 */
 
-/*
-.scene{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-/*
-.title{
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: 0; 
-}*/
-
 .container {
   display: flex;
   flex-direction: column;
@@ -55,8 +31,6 @@ nav {
   justify-content: center;
   height: 100vh;
 }
-
-
 
 .title {
   margin-bottom: 20px;
@@ -142,7 +116,7 @@ p {
   z-index: 3;
   width: 210px;*/
   top: 37%;
-  left: 26%; /* (320px / 1440px) * 100 */
+  left: 26%;
   z-index: 3;
   width: 16.5%;
 }
@@ -153,8 +127,8 @@ p {
   left: 80px;
   z-index: 3;
   width: 50px;*/
-  top: 48%; /* (290px / 970px) * 100 */
-  left: 7%;  /* (80px / 1440px) * 100 */
+  top: 48%;
+  left: 7%;
   z-index: 4;
   width: 3.47%;
 }
@@ -165,8 +139,8 @@ p {
   left: 300px;
   z-index: 3;
   width: 100px;*/
-  top: 3.47%; /* (50px / 1440px) * 100 */
-  left: 20.83%; /* (300px / 1440px) * 100 */
+  top: 3.47%;
+  left: 20.83%;
   z-index: 3;
   width: 6.94%;
 }
@@ -177,8 +151,8 @@ p {
   left: 60px;
   z-index: 3;
   width: 140px;*/
-  top: 49%; /* (310px / 1440px) * 100 */
-  left: 5%;  /* (60px / 1440px) * 100 */
+  top: 49%;
+  left: 5%; 
   z-index: 3;
   width: 12%;
 }
@@ -189,8 +163,8 @@ p {
   left: 630px;
   z-index: 3;
   width: 140px;*/
-  top: 57%; /* (330px / 1440px) * 100 */
-  left: 56%; /* (630px / 1440px) * 100 */
+  top: 57%;
+  left: 56%; 
   z-index: 3;
   width: 11%;
 }
@@ -201,8 +175,8 @@ p {
   left: 780px;
   z-index: 3;
   width: 120px;*/
-  top: 55%; /* (340px / 1440px) * 100 */
-  left: 70%; /* (780px / 1440px) * 100 */
+  top: 55%; 
+  left: 71.5%; 
   z-index: 3;
   width: 10.7%;
 }
