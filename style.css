@@ -5,7 +5,21 @@ body {
   overflow: hidden; 
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px; /* Adjust padding as needed for spacing */
+  z-index: 4;
+}
 
+.restart {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 5;
+}
 
  /* 1920 x 1080 */
  /* 1024 x 576 */
@@ -23,16 +37,7 @@ body {
   justify-content: center;
 }
 */
-.scene {
-  position: relative; /* Set to relative to act as a container for absolute positioning */
-  height: 100vh; /* Adjusted to use viewport height */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #d4ac82;
-}
+
 /*
 .title{
   position: absolute;
@@ -111,13 +116,16 @@ p {
   }
 }
 
-/*
-.cafe {
+.scene {
   position: relative;
-  height: 100%;
-  z-index: 1;
-}*/
-
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4ac82;
+}
 
 .cafe {
   position: absolute;
@@ -132,13 +140,13 @@ p {
   top: 260px;
   left: 320px;
   z-index: 3;
-  width: 240px;
+  width: 210px;
 }
 
 .oldenburg{
   position: absolute;
-  top: 340px;
-  left: 100px;
+  top: 290px;
+  left: 80px;
   z-index: 3;
   width: 50px;
 }
@@ -149,6 +157,30 @@ p {
   left: 300px;
   z-index: 3;
   width: 100px;
+}
+
+.olivia{
+  position: absolute;
+  top: 310px;
+  left: 60px;
+  z-index: 3;
+  width: 140px;
+}
+
+.may{
+  position: absolute;
+  top: 330px;
+  left: 630px;
+  z-index: 3;
+  width: 140px;
+}
+
+.nithin{
+  position: absolute;
+  top: 340px;
+  left: 780px;
+  z-index: 3;
+  width: 120px;
 }
 
 .pulse-animation {
@@ -217,6 +249,19 @@ p {
   border-radius: 20px;
   text-decoration: none;
   font-size: 30px;
+}
+
+.two-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 3s forwards;
+}
+
+.two-button-container .return-button{
+  margin: 0 15px;
 }
 
 @keyframes fadeIn {

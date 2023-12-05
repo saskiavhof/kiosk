@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const baristaElement = document.querySelector('.barista');
   const oldenburgElement = document.querySelector('.oldenburg');
+  const oliviaElement = document.querySelector('.olivia');
+  const nithinElement = document.querySelector('.nithin');
+  const mayElement = document.querySelector('.may');
 
   if (currentPath.includes('scene1.html')) {
-    // For scene1.html
     if (baristaElement) {
       baristaElement.classList.add('pulse-animation');
       baristaElement.addEventListener('click', function () {
@@ -13,13 +15,48 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   } else if (currentPath.includes('scene2.html')) {
-    // For scene2.html
     if (oldenburgElement) {
       oldenburgElement.classList.add('pulse-animation');
       oldenburgElement.addEventListener('click', function () {
         window.location.href = 'slide2.html';
       });
     }
+  } else if (currentPath.includes('scene3.html')) {
+    if (oliviaElement) {
+      oliviaElement.classList.add('pulse-animation');
+      oliviaElement.addEventListener('click', function () {
+        window.location.href = 'slide3.html';
+      });
+    }
+
+    if (mayElement) {
+      mayElement.classList.add('pulse-animation');
+      mayElement.addEventListener('click', function () {
+        window.location.href = 'slide4.html';
+      });
+    }
+
+    if (nithinElement) {
+      nithinElement.classList.add('pulse-animation');
+      nithinElement.addEventListener('click', function () {
+        window.location.href = 'slide5.html';
+      });
+    }
   }
   // Add more conditions for additional classes and HTML pages as needed
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const restart = document.querySelector('.restart');
+
+  restart.addEventListener('click', function (event) {
+    event.preventDefault();
+    const isRestartConfirmed = window.confirm("Are you sure you want to restart from the beginning?");
+    if (isRestartConfirmed) {
+      window.location.href = "index.html";
+    } else {
+    }
+  });
 });
