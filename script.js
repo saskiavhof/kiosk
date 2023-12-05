@@ -7,40 +7,56 @@ document.addEventListener('DOMContentLoaded', function () {
   const nithinElement = document.querySelector('.nithin');
   const mayElement = document.querySelector('.may');
   const discordElement = document.querySelector('.discord');
+  const laptopElement = document.querySelector('.laptop');
 
   if (currentPath.includes('scene1.html')) {
     if (baristaElement) {
       baristaElement.classList.add('pulse-animation');
       baristaElement.addEventListener('click', function () {
-        window.location.href = 'slide1.html';
+        window.location.href = 'joe1.html';
       });
     }
   } else if (currentPath.includes('scene2.html')) {
     if (oldenburgElement) {
       oldenburgElement.classList.add('pulse-animation');
       oldenburgElement.addEventListener('click', function () {
-        window.location.href = 'slide2.html';
+        window.location.href = 'oldenburg.html';
       });
     }
+
+    if (laptopElement) {
+      laptopElement.classList.add('pulse-animation');
+      laptopElement.addEventListener('click', function () {
+        window.location.href = 'laptop.html';
+      });
+    }
+
   } else if (currentPath.includes('scene3.html')) {
+    if (baristaElement) {
+      baristaElement.classList.add('pulse-animation');
+      baristaElement.addEventListener('click', function () {
+        window.location.href = 'joe2.html';
+      });
+    }
+
     if (oliviaElement) {
       oliviaElement.classList.add('pulse-animation');
       oliviaElement.addEventListener('click', function () {
-        window.location.href = 'slide3.html';
+        window.location.href = 'olivia.html';
       });
     }
 
     if (mayElement) {
       mayElement.classList.add('pulse-animation');
       mayElement.addEventListener('click', function () {
-        window.location.href = 'slide4.html';
+        window.location.href = 'may.html';
       });
     }
 
     if (nithinElement) {
       nithinElement.classList.add('pulse-animation');
       nithinElement.addEventListener('click', function () {
-        window.location.href = 'slide5.html';
+        window.location.href = 'nithin.html';
       });
     }
   }
@@ -49,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (discordElement) {
       discordElement.classList.add('pulse-animation');
       discordElement.addEventListener('click', function () {
-        window.location.href = 'slide6.html';
+        window.location.href = 'discord.html';
       });
     }
   }

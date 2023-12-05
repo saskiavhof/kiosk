@@ -181,6 +181,22 @@ p {
   width: 10.7%;
 }
 
+.laptop-olivia{
+  position: absolute;
+  top: 55%; 
+  left: 1%; 
+  z-index: 3;
+  width: 6%;
+}
+
+.laptop{
+  position: absolute;
+  top: 67%; 
+  left: 79%; 
+  z-index: 3;
+  width: 7%;
+}
+
 .pulse-animation {
   filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
   animation: pulse 2s infinite;
@@ -232,11 +248,11 @@ p {
 
 .return-container {
   position: absolute;
-  bottom: 50px; /* 50px from the bottom of the .text-box */
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  opacity: 0; /* Initially set to be transparent */
+  opacity: 0;
   animation: fadeIn 1s ease-in-out 3s forwards;
 }
 
@@ -246,20 +262,23 @@ p {
   color: #ffffff; 
   border-radius: 20px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .two-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
   opacity: 0;
   animation: fadeIn 1s ease-in-out 3s forwards;
 }
 
+
+
 .two-button-container .return-button{
   margin: 0 15px;
+  font-size: 20px;
 }
 
 @keyframes fadeIn {
