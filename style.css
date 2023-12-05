@@ -10,12 +10,7 @@ body {
  /* 1920 x 1080 */
  /* 1024 x 576 */
 
-.cafe {
-  position: absolute;
-  height: 100%;
-  z-index: 1;
-}
-
+/*
 .scene{
   position: absolute;
   top: 0;
@@ -26,6 +21,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+*/
+.scene {
+  position: relative; /* Set to relative to act as a container for absolute positioning */
+  height: 100vh; /* Adjusted to use viewport height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4ac82;
 }
 
 .title{
@@ -91,4 +97,47 @@ h1 {
   width: 70px;
   background-color: white;
   z-index: 2;
+}
+
+
+/*
+.cafe {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}*/
+
+
+.cafe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.barista{
+  position: absolute;
+  top: 260px;
+  left: 320px;
+  z-index: 3;
+  width: 240px;
+}
+
+.pulse-animation {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 0, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
+  }
 }
