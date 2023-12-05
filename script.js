@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const oliviaElement = document.querySelector('.olivia');
   const nithinElement = document.querySelector('.nithin');
   const mayElement = document.querySelector('.may');
+  const discordElement = document.querySelector('.discord');
 
   if (currentPath.includes('scene1.html')) {
     if (baristaElement) {
@@ -43,6 +44,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
+
+  else if (currentPath.includes('scene4.html')) {
+    if (discordElement) {
+      discordElement.classList.add('pulse-animation');
+      discordElement.addEventListener('click', function () {
+        window.location.href = 'slide6.html';
+      });
+    }
+  }
+
+  else if (currentPath.includes('ending.html')) {
+    if (baristaElement) {
+      baristaElement.classList.add('pulse-animation');
+      baristaElement.addEventListener('click', function () {
+        window.location.href = 'ending-slide.html';
+      });
+    }
+  }
   // Add more conditions for additional classes and HTML pages as needed
 });
 
@@ -60,3 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
+

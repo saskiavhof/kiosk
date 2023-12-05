@@ -137,50 +137,74 @@ p {
 
 .barista{
   position: absolute;
-  top: 260px;
+  /*top: 260px;
   left: 320px;
   z-index: 3;
-  width: 210px;
+  width: 210px;*/
+  top: 37%;
+  left: 26%; /* (320px / 1440px) * 100 */
+  z-index: 3;
+  width: 16.5%;
 }
 
 .oldenburg{
   position: absolute;
-  top: 290px;
+  /*top: 290px;
   left: 80px;
   z-index: 3;
-  width: 50px;
+  width: 50px;*/
+  top: 48%; /* (290px / 970px) * 100 */
+  left: 7%;  /* (80px / 1440px) * 100 */
+  z-index: 4;
+  width: 3.47%;
 }
 
 .discord{
   position: absolute;
-  top: 50px;
+  /*top: 50px;
   left: 300px;
   z-index: 3;
-  width: 100px;
+  width: 100px;*/
+  top: 3.47%; /* (50px / 1440px) * 100 */
+  left: 20.83%; /* (300px / 1440px) * 100 */
+  z-index: 3;
+  width: 6.94%;
 }
 
 .olivia{
   position: absolute;
-  top: 310px;
+  /*top: 310px;
   left: 60px;
   z-index: 3;
-  width: 140px;
+  width: 140px;*/
+  top: 49%; /* (310px / 1440px) * 100 */
+  left: 5%;  /* (60px / 1440px) * 100 */
+  z-index: 3;
+  width: 12%;
 }
 
 .may{
   position: absolute;
-  top: 330px;
+  /*top: 330px;
   left: 630px;
   z-index: 3;
-  width: 140px;
+  width: 140px;*/
+  top: 57%; /* (330px / 1440px) * 100 */
+  left: 56%; /* (630px / 1440px) * 100 */
+  z-index: 3;
+  width: 11%;
 }
 
 .nithin{
   position: absolute;
-  top: 340px;
+  /*top: 340px;
   left: 780px;
   z-index: 3;
-  width: 120px;
+  width: 120px;*/
+  top: 55%; /* (340px / 1440px) * 100 */
+  left: 70%; /* (780px / 1440px) * 100 */
+  z-index: 3;
+  width: 10.7%;
 }
 
 .pulse-animation {
