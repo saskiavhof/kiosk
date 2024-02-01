@@ -43,24 +43,31 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
 }
 
+
 h1 {
-  text-align: center;
   color: #b56767;
   font-size: 70px;
-  margin-top: 80px;
-  padding: 20px;
 }
 
 h2 {
   color: #b56767;
+}
+
+h3 {
+  color: #b56767;
+  font-size: 12px;
+  text-align: center;
 }
 
 p {
